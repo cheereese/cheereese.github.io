@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何开始搭建自己的GitHub+Hexo+Hipaper博客 | Secret Monthly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="web开发" />
+  
+  
+  
+  
+  <meta name="description" content="如何搭建博客：我使用的教程以及些许注解↓第一份教程（容易看懂）：《Github + Hexo 搭建个人博客超详细教程》 From Tyzhaohttps:&#x2F;&#x2F;www.yshawlon.cn&#x2F;1.html#toc-heading-17 注：在github建库时不要勾选readme，不要在setting选Jekyll主题，Jekyll和hexo冲突 第二份教程（不容易出错）：《用 GitHub + H">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何开始搭建自己的GitHub+Hexo+Hipaper博客">
+<meta property="og:url" content="https://cheereese.github.io/2022/03/14/howtobuildyourblogandmydebugjournal/index.html">
+<meta property="og:site_name" content="Secret Monthly">
+<meta property="og:description" content="如何搭建博客：我使用的教程以及些许注解↓第一份教程（容易看懂）：《Github + Hexo 搭建个人博客超详细教程》 From Tyzhaohttps:&#x2F;&#x2F;www.yshawlon.cn&#x2F;1.html#toc-heading-17 注：在github建库时不要勾选readme，不要在setting选Jekyll主题，Jekyll和hexo冲突 第二份教程（不容易出错）：《用 GitHub + H">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-14T05:47:59.000Z">
+<meta property="article:modified_time" content="2022-03-17T15:20:40.185Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="web开发">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Secret Monthly" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="Secret Monthly" rel="home"> Secret Monthly </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">Well hell, I am in./@cheereese</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="/"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="archives"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="categories"> <a class="" href="/categories">分类</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="tags"> <a class="" href="/tags">标签</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="about"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-howtobuildyourblogandmydebugjournal" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      如何开始搭建自己的GitHub+Hexo+Hipaper博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2022/03/14/howtobuildyourblogandmydebugjournal/" class="article-date">
+	  <time datetime="2022-03-14T05:47:59.000Z" itemprop="datePublished">三月 14, 2022</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/">编程笔记</a>
+ 
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="如何搭建博客：我使用的教程以及些许注解↓"><a href="#如何搭建博客：我使用的教程以及些许注解↓" class="headerlink" title="如何搭建博客：我使用的教程以及些许注解↓"></a>如何搭建博客：我使用的教程以及些许注解↓</h3><p>第一份教程（容易看懂）：《Github + Hexo 搭建个人博客超详细教程》 From Tyzhao<br><a target="_blank" rel="noopener" href="https://www.yshawlon.cn/1.html#toc-heading-17">https://www.yshawlon.cn/1.html#toc-heading-17</a></p>
+<p>注：在github建库时不要勾选readme，不要在setting选Jekyll主题，Jekyll和hexo冲突</p>
+<p>第二份教程（不容易出错）：《用 GitHub + Hexo 建立你的第一个博客》From Crossin<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/22191919?refer=crossin">https://zhuanlan.zhihu.com/p/22191919?refer=crossin</a></p>
+<p>注：编程基础为0的人读起来也许辛苦一点，总之看不懂的地方高概率是让你去hexo根目录下面右键git bash here</p>
+<span id="more"></span>
+
+<h3 id="Q-amp-A↓"><a href="#Q-amp-A↓" class="headerlink" title="Q&amp;A↓"></a>Q&amp;A↓</h3><p>关于ssh 《git学习（1）将本地仓库与远程仓库建立联系，并上传项目到远程仓库》<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wet5649/article/details/82869831">https://blog.csdn.net/wet5649/article/details/82869831</a></p>
+<p>hexo 更换主题后出现问题：WARN No layout<br><a target="_blank" rel="noopener" href="https://lamirs.vercel.app/hexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E5%90%8E%E5%87%BA%E7%8E%B0%E9%97%AE%E9%A2%98-warn-no-layout-index-html/">https://lamirs.vercel.app/hexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E5%90%8E%E5%87%BA%E7%8E%B0%E9%97%AE%E9%A2%98-warn-no-layout-index-html/</a>  </p>
+<p>hexo插入图片及控制大小<br><a target="_blank" rel="noopener" href="https://blog.51cto.com/alexclownfish/3051079">https://blog.51cto.com/alexclownfish/3051079</a></p>
+<h3 id="工具和插件使用反馈↓"><a href="#工具和插件使用反馈↓" class="headerlink" title="工具和插件使用反馈↓"></a>工具和插件使用反馈↓</h3><p>一键将 Word 转换为 Markdown（我还没试）<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30891168">https://zhuanlan.zhihu.com/p/30891168</a></p>
+<p>可视化编辑hexo博客的多种插件（我还没试）<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27384681/answers/updated">https://www.zhihu.com/question/27384681/answers/updated</a>  </p>
+<p>简单版本的Hexo脚注插件，限制很多容易出bug，原作者不再更新，debug见20220316系统日志。观望使用中<br><a target="_blank" rel="noopener" href="https://github.com/LouisBarranqueiro/hexo-footnotes">https://github.com/LouisBarranqueiro/hexo-footnotes</a>  </p>
+<p>hexo加密插件，极大拖慢deploy速度，有两个无法修复问题，debug见20220317系统日志。限制使用<br><a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">https://github.com/D0n9X1n/hexo-blog-encrypt</a></p>
+<p>hexo官方文档收录的全部插件<br><a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
+<p>卸载hexo插件<br><a target="_blank" rel="noopener" href="https://heychaw.cc/695a5f4e.html">https://heychaw.cc/695a5f4e.html</a></p>
+<h3 id="如何更新博客：对前一篇文章《hello-world》的扩展说明↓"><a href="#如何更新博客：对前一篇文章《hello-world》的扩展说明↓" class="headerlink" title="如何更新博客：对前一篇文章《hello world》的扩展说明↓"></a>如何更新博客：对前一篇文章《hello world》的扩展说明↓</h3><ol>
+<li><p>使用MarkdownPad2打开Hexo&#x2F;source&#x2F;_posts中的md文件，在MP2里编辑你的文章，或右键git bash here输入hexo new post “article title”，这样就新建了一篇文章<br>注：每一个md文件都是一篇文章，md文件名会显示在网址里</p>
+</li>
+<li><p>保存md文件后，在Hexo（根目录）右键点击git bash here，输入hexo g生成静态网站<br>注：这一步可能出现error: can not read a block mapping entry<br>可以参考这个 <a target="_blank" rel="noopener" href="https://chrischen0405.github.io/2018/11/21/post20181121-2/">https://chrischen0405.github.io/2018/11/21/post20181121-2/</a></p>
+</li>
+<li><p>输入hexo s可以本地预览效果，当然最后别忘了ctrl+C和y停止运行，不然会一直占用4000端口</p>
+</li>
+<li><p>最后输入hexo d上传github</p>
+</li>
+</ol>
+<h3 id="hexo模板选择"><a href="#hexo模板选择" class="headerlink" title="hexo模板选择"></a>hexo模板选择</h3><p>hexo主题汇总：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>Typecho简洁主题推荐——Maupassant：<a target="_blank" rel="noopener" href="https://github.com/tufu9441/maupassant-hexo">https://github.com/tufu9441/maupassant-hexo</a></p>
+<p>简洁优雅的hexo主题推荐——经典yilia plus：<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">https://github.com/JoeyBling/hexo-theme-yilia-plus</a></p>
+<p>我使用的报纸式样主题——hipaper：<a target="_blank" rel="noopener" href="https://github.com/iTimeTraveler/hexo-theme-hipaper">https://github.com/iTimeTraveler/hexo-theme-hipaper</a></p>
+<h3 id="从零开始的系统日志"><a href="#从零开始的系统日志" class="headerlink" title="从零开始的系统日志"></a>从零开始的系统日志</h3><h5 id="20220314-为电脑配置本地hexo"><a href="#20220314-为电脑配置本地hexo" class="headerlink" title="20220314 为电脑配置本地hexo"></a>20220314 为电脑配置本地hexo</h5><p>新建一个Hexo文件夹，比如我的（C&#x2F;panakot Blog&#x2F;Hexo），在Hexo文件夹下右键单击鼠标，点击 Git Bash Here，依次输入以下 npm 命令即可初始化。<br>hexo init<br>npm install<br>→攻略：<a target="_blank" rel="noopener" href="https://www.yshawlon.cn/1.html#toc-heading-12">https://www.yshawlon.cn/1.html#toc-heading-12</a></p>
+<h5 id="20220314-连接本地与github"><a href="#20220314-连接本地与github" class="headerlink" title="20220314 连接本地与github"></a>20220314 连接本地与github</h5><p>STEP1 生成密钥<br>STEP2 在github设ssh（在github-setting-SSH and GPG新建SSH，填入密钥）<br>STEP3 本地连接github（右键git bash here然后输入ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;</a>）<br>STEP4 修改博客根目录的_config.yml<br>→截至目前的攻略：<a target="_blank" rel="noopener" href="https://www.yshawlon.cn/1.html#toc-heading-13">https://www.yshawlon.cn/1.html#toc-heading-13</a><br>STEP5 deploy到github仓库，如出现错误则按照攻略下载插件<br>→攻略：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/22498474">https://zhuanlan.zhihu.com/p/22498474</a></p>
+<h5 id="20220314-更新文章test"><a href="#20220314-更新文章test" class="headerlink" title="20220314 更新文章test"></a>20220314 更新文章test</h5><p>编辑md时在tags的冒号后面加了空格，解决了deploy后404的问题。<br>（听说要将title冒号后面的双引号改中文符号，但我还没遇到这个问题，先记下了）</p>
+<h5 id="20220315-hipaper主题初始化"><a href="#20220315-hipaper主题初始化" class="headerlink" title="20220315 hipaper主题初始化"></a>20220315 hipaper主题初始化</h5><p>1 git clone下来的hipaper文件夹直接放在themes下面<br>2 为使用主题的搜索功能，在Hexo根目录下安装hexo-generator-json-content工具<br>→攻略：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u010983881/article/details/53735359">https://blog.csdn.net/u010983881/article/details/53735359</a><br>3 在hexo根目录&#x2F;sources里面创建了tags、categories、about的文件夹，解决了主题的tags、categories、about导航会404的问题<br>→参考：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0d6f63385c28">https://www.jianshu.com/p/0d6f63385c28</a><br>4 改写tags、categories文件夹里的md文件，让主题的tags、categories导航能够正常使用，解决了显示空白的问题<br>→攻略：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29017171">https://www.zhihu.com/question/29017171</a><br>→攻略：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0d6f63385c28">https://www.jianshu.com/p/0d6f63385c28</a><br> 5 用markdownpad2编辑about文件夹内的md文件，增加了自我介绍</p>
+<h5 id="20220316-hipaper主题调整和插件调试"><a href="#20220316-hipaper主题调整和插件调试" class="headerlink" title="20220316 hipaper主题调整和插件调试"></a>20220316 hipaper主题调整和插件调试</h5><p>1 更改了侧边栏“联系我们”（social links）的图标及其导航，使其能够跳转我的ao3和lofter。<br>很多图标不能使用比如A和L，在hexo s预览时可以使用的图标deploy后也能正常使用，没显示的话多d几次。anchor和inbox可以使用。<br>→主题作者答复：<a target="_blank" rel="noopener" href="https://github.com/iTimeTraveler/hexo-theme-hipaper/issues/15">https://github.com/iTimeTraveler/hexo-theme-hipaper/issues/15</a><br>2 增加了脚注插件，下载插件后在根目录config.yml的#extention下写入plugins:- hexo-footnotes，第一次调试的实验对象是20220314the precautionary principle<br>调试结果如下<br> -脚注中不能使用Ibid和英文双引号，脚注之间必须两次回车且不能夹空格以防止粘连<br> -脚注数字不能使用2、7、9，疑似之前Ibid留下的问题<br> -建议脚注不要使用严格引用格式，引用越简单越好，比如人名英文逗号标题英文括号年份英文括号。观望使用</p>
+<h5 id="20220317-插件调试和deploy报错"><a href="#20220317-插件调试和deploy报错" class="headerlink" title="20220317 插件调试和deploy报错"></a>20220317 插件调试和deploy报错</h5><p>1 增加了加密插件，下载后马上可以使用，第一次调试的实验对象是20220314the precautionary principle<br>调试结果如下<br> -密码可以使用纯英文，如果使用纯数字则需要英文双引号引住。hexo s正常运行的话应该就行了，每次加密deploy后更新到网站的速度非常慢。<br> -作者建议只使用一个密码并不再更改。输入一次正确密码之后所有加密文章都解锁，且该问题无法修复。加密文章无法显示目录，且该问题无法修复。<br>→插件作者答复：<a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt/issues/130">https://github.com/D0n9X1n/hexo-blog-encrypt/issues/130</a></p>
+<p>2 deploy报错代码（报错前啥也没做，感觉加了加密后d变很卡）  </p>
+<blockquote>
+<p>! [remote rejected] HEAD -&gt; master (Internal Server Error)<br>error: failed to push some refs to ‘<a target="_blank" rel="noopener" href="https://github.com/cheereese/cheereese.github.io.git&#39;">https://github.com/cheereese/cheereese.github.io.git&#39;</a><br>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (C:\Hexo blog\Hexo\node_modules\hexo-util\lib\spawn.js:51:21)<br>      at ChildProcess.emit (node:events:520:28)<br>      at ChildProcess.cp.emit (C:\Hexo blog\Hexo\node_modules\cross-spawn\lib\enoent.js:34:29)<br>      at Process.ChildProcess._handle.onexit (node:internal&#x2F;child_process:291:12) {<br>    code: 1<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a></p>
+</blockquote>
+<p>（未解决）方法1：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c60ad2a33a1e">https://www.jianshu.com/p/c60ad2a33a1e</a><br>（解决）方法2：卸载加密插件</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/">编程笔记</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/03/14/20220314precautionary%20principle%20in%20aus/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          【环境法】the precautionary principle in Australia
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%9A%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84%E6%95%99%E7%A8%8B%E4%BB%A5%E5%8F%8A%E4%BA%9B%E8%AE%B8%E6%B3%A8%E8%A7%A3%E2%86%93"><span class="nav-number">1.</span> <span class="nav-text">如何搭建博客：我使用的教程以及些许注解↓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q-amp-A%E2%86%93"><span class="nav-number">2.</span> <span class="nav-text">Q&amp;A↓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7%E5%92%8C%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%8F%8D%E9%A6%88%E2%86%93"><span class="nav-number">3.</span> <span class="nav-text">工具和插件使用反馈↓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%EF%BC%9A%E5%AF%B9%E5%89%8D%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E3%80%8Ahello-world%E3%80%8B%E7%9A%84%E6%89%A9%E5%B1%95%E8%AF%B4%E6%98%8E%E2%86%93"><span class="nav-number">4.</span> <span class="nav-text">如何更新博客：对前一篇文章《hello world》的扩展说明↓</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo%E6%A8%A1%E6%9D%BF%E9%80%89%E6%8B%A9"><span class="nav-number">5.</span> <span class="nav-text">hexo模板选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%97%A5%E5%BF%97"><span class="nav-number">6.</span> <span class="nav-text">从零开始的系统日志</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#20220314-%E4%B8%BA%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE%E6%9C%AC%E5%9C%B0hexo"><span class="nav-number">6.0.1.</span> <span class="nav-text">20220314 为电脑配置本地hexo</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#20220314-%E8%BF%9E%E6%8E%A5%E6%9C%AC%E5%9C%B0%E4%B8%8Egithub"><span class="nav-number">6.0.2.</span> <span class="nav-text">20220314 连接本地与github</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#20220314-%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0test"><span class="nav-number">6.0.3.</span> <span class="nav-text">20220314 更新文章test</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#20220315-hipaper%E4%B8%BB%E9%A2%98%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">6.0.4.</span> <span class="nav-text">20220315 hipaper主题初始化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#20220316-hipaper%E4%B8%BB%E9%A2%98%E8%B0%83%E6%95%B4%E5%92%8C%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95"><span class="nav-number">6.0.5.</span> <span class="nav-text">20220316 hipaper主题调整和插件调试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#20220317-%E6%8F%92%E4%BB%B6%E8%B0%83%E8%AF%95%E5%92%8Cdeploy%E6%8A%A5%E9%94%99"><span class="nav-number">6.0.6.</span> <span class="nav-text">20220317 插件调试和deploy报错</span></a></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2022 Secret Monthly All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+<script src="/js/bootstrap.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
