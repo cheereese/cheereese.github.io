@@ -19,7 +19,7 @@
 <meta property="og:description" content="如何搭建博客：我使用的教程以及些许注解↓第一份教程（容易看懂）：《Github + Hexo 搭建个人博客超详细教程》 From Tyzhaohttps:&#x2F;&#x2F;www.yshawlon.cn&#x2F;1.html#toc-heading-17 注：在github建库时不要勾选readme，不要在setting选Jekyll主题，Jekyll和hexo冲突 第二份教程（不容易出错）：《用 GitHub + H">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-14T05:47:59.000Z">
-<meta property="article:modified_time" content="2022-03-19T06:44:45.238Z">
+<meta property="article:modified_time" content="2022-03-19T06:54:31.532Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="web开发">
 <meta name="twitter:card" content="summary">
@@ -157,7 +157,7 @@
 <p>简单版本的Hexo脚注插件，限制很多容易出bug，原作者不再更新，debug见20220316系统日志。观望使用中<br><a target="_blank" rel="noopener" href="https://github.com/LouisBarranqueiro/hexo-footnotes">https://github.com/LouisBarranqueiro/hexo-footnotes</a>  </p>
 <p>hexo加密插件，极大拖慢deploy速度，有两个无法修复问题，debug见20220317系统日志。限制使用<br><a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">https://github.com/D0n9X1n/hexo-blog-encrypt</a></p>
 <p>hexo官方文档收录的全部插件<br><a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
-<p>卸载hexo插件<br><a target="_blank" rel="noopener" href="https://heychaw.cc/695a5f4e.html">https://heychaw.cc/695a5f4e.html</a></p>
+<p>卸载hexo插件，插件名后不用加版本号<br><a target="_blank" rel="noopener" href="https://heychaw.cc/695a5f4e.html">https://heychaw.cc/695a5f4e.html</a></p>
 <h3 id="如何更新博客：对前一篇文章《hello-world》的扩展说明↓"><a href="#如何更新博客：对前一篇文章《hello-world》的扩展说明↓" class="headerlink" title="如何更新博客：对前一篇文章《hello world》的扩展说明↓"></a>如何更新博客：对前一篇文章《hello world》的扩展说明↓</h3><ol>
 <li><p>使用MarkdownPad2打开Hexo&#x2F;source&#x2F;_posts中的md文件，在MP2里编辑你的文章，或右键git bash here输入hexo new post “article title”，这样就新建了一篇文章<br>注：每一个md文件都是一篇文章，md文件名会显示在网址里</p>
 </li>
@@ -173,7 +173,7 @@
 <p>简洁优雅的hexo主题推荐——经典yilia plus：<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">https://github.com/JoeyBling/hexo-theme-yilia-plus</a></p>
 <p>我使用的报纸式样主题——hipaper：<a target="_blank" rel="noopener" href="https://github.com/iTimeTraveler/hexo-theme-hipaper">https://github.com/iTimeTraveler/hexo-theme-hipaper</a></p>
 <h3 id="从零开始的系统日志"><a href="#从零开始的系统日志" class="headerlink" title="从零开始的系统日志"></a>从零开始的系统日志</h3><h5 id="20220314-为电脑配置本地hexo"><a href="#20220314-为电脑配置本地hexo" class="headerlink" title="20220314 为电脑配置本地hexo"></a>20220314 为电脑配置本地hexo</h5><p>新建一个Hexo文件夹，比如我的（C&#x2F;panakot Blog&#x2F;Hexo），在Hexo文件夹下右键单击鼠标，点击 Git Bash Here，依次输入以下 npm 命令即可初始化。<br>hexo init<br>npm install<br>→攻略：<a target="_blank" rel="noopener" href="https://www.yshawlon.cn/1.html#toc-heading-12">https://www.yshawlon.cn/1.html#toc-heading-12</a></p>
-<h5 id="20220314-连接本地与github"><a href="#20220314-连接本地与github" class="headerlink" title="20220314 连接本地与github"></a>20220314 连接本地与github</h5><p>STEP1 生成密钥<br>STEP2 在github设ssh（在github-setting-SSH and GPG新建SSH，填入密钥）<br>STEP3 本地连接github（右键git bash here然后输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;</a>）<br>STEP4 修改博客根目录的_config.yml<br>→截至目前的攻略：<a target="_blank" rel="noopener" href="https://www.yshawlon.cn/1.html#toc-heading-13">https://www.yshawlon.cn/1.html#toc-heading-13</a><br>STEP5 deploy到github仓库，如出现错误则按照攻略下载插件<br>→攻略：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/22498474">https://zhuanlan.zhihu.com/p/22498474</a></p>
+<h5 id="20220314-连接本地与github"><a href="#20220314-连接本地与github" class="headerlink" title="20220314 连接本地与github"></a>20220314 连接本地与github</h5><p>STEP1 生成密钥<br>STEP2 在github设ssh（在github-setting-SSH and GPG新建SSH，填入密钥）<br>STEP3 本地连接github（右键git bash here然后输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>）<br>STEP4 修改博客根目录的_config.yml<br>→截至目前的攻略：<a target="_blank" rel="noopener" href="https://www.yshawlon.cn/1.html#toc-heading-13">https://www.yshawlon.cn/1.html#toc-heading-13</a><br>STEP5 deploy到github仓库，如出现错误则按照攻略下载插件<br>→攻略：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/22498474">https://zhuanlan.zhihu.com/p/22498474</a></p>
 <h5 id="20220314-更新文章test"><a href="#20220314-更新文章test" class="headerlink" title="20220314 更新文章test"></a>20220314 更新文章test</h5><p>编辑md时在tags的冒号后面加了空格，解决了deploy后404的问题。<br>（听说要将title冒号后面的双引号改中文符号，但我还没遇到这个问题，先记下了）</p>
 <h5 id="20220315-hipaper主题初始化"><a href="#20220315-hipaper主题初始化" class="headerlink" title="20220315 hipaper主题初始化"></a>20220315 hipaper主题初始化</h5><p>1 git clone下来的hipaper文件夹直接放在themes下面<br>2 为使用主题的搜索功能，在Hexo根目录下安装hexo-generator-json-content工具<br>→攻略：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u010983881/article/details/53735359">https://blog.csdn.net/u010983881/article/details/53735359</a><br>3 在hexo根目录&#x2F;sources里面创建了tags、categories、about的文件夹，解决了主题的tags、categories、about导航会404的问题<br>→参考：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0d6f63385c28">https://www.jianshu.com/p/0d6f63385c28</a><br>4 改写tags、categories文件夹里的md文件，让主题的tags、categories导航能够正常使用，解决了显示空白的问题<br>→攻略：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29017171">https://www.zhihu.com/question/29017171</a><br>→攻略：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0d6f63385c28">https://www.jianshu.com/p/0d6f63385c28</a><br> 5 用markdownpad2编辑about文件夹内的md文件，增加了自我介绍</p>
 <h5 id="20220316-hipaper主题调整和插件调试"><a href="#20220316-hipaper主题调整和插件调试" class="headerlink" title="20220316 hipaper主题调整和插件调试"></a>20220316 hipaper主题调整和插件调试</h5><p>1 更改了侧边栏“联系我们”（social links）的图标及其导航，使其能够跳转我的ao3和lofter。<br>很多图标不能使用比如A和L，在hexo s预览时可以使用的图标deploy后也能正常使用，没显示的话多d几次。anchor和inbox可以使用。<br>→主题作者答复：<a target="_blank" rel="noopener" href="https://github.com/iTimeTraveler/hexo-theme-hipaper/issues/15">https://github.com/iTimeTraveler/hexo-theme-hipaper/issues/15</a><br>2 增加了脚注插件，下载插件后在根目录config.yml的#extention下写入plugins:- hexo-footnotes，第一次调试的实验对象是20220314the precautionary principle<br>调试结果如下<br> -脚注中不能使用Ibid和英文双引号，脚注之间必须两次回车且不能夹空格以防止粘连<br> -脚注数字不能使用2、7、9，疑似之前Ibid留下的问题<br> -建议脚注不要使用严格引用格式，引用越简单越好，比如人名英文逗号标题英文括号年份英文括号。观望使用</p>
@@ -183,7 +183,8 @@
 <p>! [remote rejected] HEAD -&gt; master (Internal Server Error)<br>error: failed to push some refs to ‘<a target="_blank" rel="noopener" href="https://github.com/cheereese/cheereese.github.io.git&#39;">https://github.com/cheereese/cheereese.github.io.git&#39;</a><br>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (C:\Hexo blog\Hexo\node_modules\hexo-util\lib\spawn.js:51:21)<br>      at ChildProcess.emit (node:events:520:28)<br>      at ChildProcess.cp.emit (C:\Hexo blog\Hexo\node_modules\cross-spawn\lib\enoent.js:34:29)<br>      at Process.ChildProcess._handle.onexit (node:internal&#x2F;child_process:291:12) {<br>    code: 1<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a></p>
 </blockquote>
 <p>（未解决）方法1：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c60ad2a33a1e">https://www.jianshu.com/p/c60ad2a33a1e</a><br>（未解决，但d偶尔成功时变快了）方法2：卸载加密插件<br>（未解决）方法3：<a target="_blank" rel="noopener" href="https://blog.zhheo.com/p/128998ac.html">https://blog.zhheo.com/p/128998ac.html</a><br>以上方法1和3都是解决code128的问题，我的报错是code1<br>使用hexo g –debug未发现问题，clean后重新g和d，不再报错。随后网页开始404，原因不明，在config.yml的配置项的冒号后面删了空格重加空格，网页恢复。</p>
-<h5 id="20220319-deploy后无法显示（0317-0319）"><a href="#20220319-deploy后无法显示（0317-0319）" class="headerlink" title="20220319 deploy后无法显示（0317-0319）"></a>20220319 deploy后无法显示（0317-0319）</h5>
+<h5 id="20220319-deploy后无法显示（0317-0319）"><a href="#20220319-deploy后无法显示（0317-0319）" class="headerlink" title="20220319 deploy后无法显示（0317-0319）"></a>20220319 deploy后无法显示（0317-0319）</h5><p>1 检查了github仓库，deployment history中这三天的deploy没有active过，只有failure和inactive<br>2 随便修改了20220314的两篇文章（包括加密文章）的内容，再deploy，history显示此次deployment active，刷新网页后更新正常。原因不明。</p>
+
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -194,6 +195,31 @@
       
   <span class="ico-tags"></span>
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
 
       
     </footer>
